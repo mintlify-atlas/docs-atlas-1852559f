@@ -1,0 +1,210 @@
+{
+  "projectType": "saas",
+  "projectName": "ThingsBoard",
+  "projectDescription": "Open-source IoT platform for device management, data collection, processing, visualization, and real-time analytics",
+  "theme": "aspen",
+  "primaryColor": "#305680",
+  "lightColor": "#5a8cb0",
+  "darkColor": "#1a3a52",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "installation"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "concepts/overview",
+              "concepts/entities-and-relations",
+              "concepts/telemetry",
+              "concepts/attributes",
+              "concepts/rule-engine"
+            ]
+          },
+          {
+            "group": "Device Management",
+            "pages": [
+              "devices/overview",
+              "devices/device-profiles",
+              "devices/provisioning",
+              "devices/connectivity"
+            ]
+          },
+          {
+            "group": "Data Processing",
+            "pages": [
+              "data/telemetry-collection",
+              "data/rule-chains",
+              "data/transformations",
+              "data/alarms"
+            ]
+          },
+          {
+            "group": "Visualization",
+            "pages": [
+              "dashboards/overview",
+              "dashboards/widgets",
+              "dashboards/scada"
+            ]
+          },
+          {
+            "group": "IoT Protocols",
+            "pages": [
+              "protocols/mqtt",
+              "protocols/http",
+              "protocols/coap",
+              "protocols/lwm2m",
+              "protocols/snmp"
+            ]
+          },
+          {
+            "group": "Administration",
+            "pages": [
+              "admin/tenants",
+              "admin/users-and-permissions",
+              "admin/customers"
+            ]
+          },
+          {
+            "group": "Deployment",
+            "pages": [
+              "deployment/docker",
+              "deployment/kubernetes",
+              "deployment/microservices"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "api/overview",
+              "api/authentication"
+            ]
+          },
+          {
+            "group": "Device APIs",
+            "pages": [
+              "api/devices",
+              "api/device-profiles"
+            ]
+          },
+          {
+            "group": "Asset APIs",
+            "pages": [
+              "api/assets",
+              "api/asset-profiles"
+            ]
+          },
+          {
+            "group": "Telemetry APIs",
+            "pages": [
+              "api/telemetry",
+              "api/attributes"
+            ]
+          },
+          {
+            "group": "Dashboard APIs",
+            "pages": [
+              "api/dashboards"
+            ]
+          },
+          {
+            "group": "Rule Engine APIs",
+            "pages": [
+              "api/rule-chains"
+            ]
+          },
+          {
+            "group": "Alarm APIs",
+            "pages": [
+              "api/alarms"
+            ]
+          },
+          {
+            "group": "Admin APIs",
+            "pages": [
+              "api/tenants",
+              "api/customers",
+              "api/users"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Rule Engine",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "rule-engine/overview",
+              "rule-engine/getting-started"
+            ]
+          },
+          {
+            "group": "Node Types",
+            "pages": [
+              "rule-engine/action-nodes",
+              "rule-engine/filter-nodes",
+              "rule-engine/transformation-nodes",
+              "rule-engine/enrichment-nodes",
+              "rule-engine/external-nodes"
+            ]
+          },
+          {
+            "group": "Integration",
+            "pages": [
+              "rule-engine/integrations/rest",
+              "rule-engine/integrations/mqtt",
+              "rule-engine/integrations/kafka",
+              "rule-engine/integrations/aws",
+              "rule-engine/integrations/gcp"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Device management and provisioning",
+    "Multi-protocol support (MQTT, HTTP, CoAP, LwM2M, SNMP)",
+    "Telemetry data collection and storage",
+    "Real-time dashboards and visualization",
+    "Rule engine for data processing",
+    "Alarm management and notifications",
+    "Multi-tenancy and customer hierarchy",
+    "Microservices architecture",
+    "SCADA system support",
+    "Asset management and relations"
+  ],
+  "publicApiSurface": [
+    "DeviceController - /api/device",
+    "AssetController - /api/asset",
+    "TelemetryController - /api/plugins/telemetry",
+    "DashboardController - /api/dashboard",
+    "RuleChainController - /api/ruleChain",
+    "AlarmController - /api/alarm",
+    "CustomerController - /api/customer",
+    "UserController - /api/user",
+    "TenantController - /api/tenant",
+    "DeviceProfileController - /api/deviceProfile",
+    "AssetProfileController - /api/assetProfile",
+    "AuthController - /api/auth",
+    "MQTT Transport - mqtt://",
+    "HTTP Transport - /api/v1/",
+    "CoAP Transport - coap://",
+    "LwM2M Transport - lwm2m://",
+    "SNMP Transport"
+  ]
+}
